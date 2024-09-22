@@ -1,11 +1,12 @@
 function reverseString(s) {
     try {
-    return s.split('').reverse().join('')
+    reversed = s.split('').reverse().join('')
     }
     catch (e){
         console.log( e.message )
+        reversed = s
     } finally{
-        return s
+        return reversed
     }
 }
 console.log(reverseString(56))
